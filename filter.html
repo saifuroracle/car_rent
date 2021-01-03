@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebProgrammingProject</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="book.css">
+</head>
+<body class="body">
+
+        <button class="toggle-sidebar"></button>
+
+        <div class="container container-book-posts">
+
+            <aside class="sidebar"> <!--  Start Sidebar -->
+
+                <form >
+
+                    <div class="widget"> <!--  Start Widget -->
+
+                        <div class="widget_title">
+                            Choose your type
+                        </div> 
+    
+                        <div class="widget_body"> <!-- Start Widget Body -->
+    
+                            <div class="location">
+                                <div class="location_row">
+    
+                                        <input type="checkbox"  data-location-param id='cars'  value="car"  class="location_checkbox">
+                                        <label class="location_btn" for='cars'>Car</label>
+    
+                                        <input type="checkbox"  data-location-param id='suv' value="suv" class="location_checkbox">
+                                        <label class="location_btn" for='suv'>SUV</label>
+    
+                                        <input type="checkbox"  data-location-param id='van' value="van" class="location_checkbox">
+                                        <label class="location_btn" for='van'>Van</label>
+    
+                                        <input type="checkbox"   data-location-param id='carrier' value="carrier" class="location_checkbox">
+                                        <label class="location_btn" for='carrier'>People Carrier</label>
+    
+                                </div>
+    
+                                <div class="location_row">
+                                    <input type="checkbox" id='all'  value="all"  class="location_checkbox">
+                                    <label class="location_btn" for='all'>All types</label>
+                                </div>
+    
+                            </div>
+    
+                        </div> <!-- End Widget Body -->
+    
+                    </div> <!-- End Widget  -->
+    
+                    <div class="widget"> <!--  Start Widget -->
+    
+                        <div class="widget_title">
+                            Transmission
+                        </div> 
+    
+                        <div class="widget_body"> <!-- Start Widget Body -->
+    
+                            <label class="radio">
+    
+                                <input type="radio"  id='any'  value="any" class="radio_real" checked name="transmission">
+                                <span class="radio_fake"></span>
+                                <span class="radio_title">Any</span>
+    
+                            </label>
+    
+                            <label class="radio">
+    
+                                <input type="radio"  id='automatic' value="automatic"  class="radio_real " name="transmission">
+                                <span class="radio_fake"></span>
+                                <span class="radio_title">Automatic</span>
+    
+                            </label>
+    
+                            <label class="radio">
+    
+                                <input type="radio" id='manual'  value="manual" class="radio_real" name="transmission">
+                                <span class="radio_fake"></span>
+                                <span class="radio_title">Manual</span>
+    
+                            </label>
+    
+    
+    
+                        </div> <!-- End Widget Body -->
+    
+                    </div> <!-- End Widget  -->
+    
+                    <div class="widget"> <!--  Start Widget -->
+    
+                        <div class="widget_title">
+                            No. of passengers
+                        </div> 
+    
+                        <div class="widget_body"> <!-- Start Widget Body -->
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox" id="allpas" value="allpas" class="checkbox_real" checked>
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title" checked>Any</span>
+    
+                            </label>
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox" id="2" value="2" class="checkbox_real ">
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title">2</span>
+    
+                            </label>
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox" id="3" value="3" class="checkbox_real" >
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title">3</span>
+    
+                            </label>
+
+                            <label class="checkbox">
+    
+                                <input type="checkbox" id="4" value="4" class="checkbox_real" >
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title">4</span>
+    
+                            </label>
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox" id="5" value="5" class="checkbox_real" >
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title">5</span>
+    
+                            </label>
+    
+                            <label class="checkbox">
+    
+                                <input type="checkbox" id="7" value="7" class="checkbox_real" >
+                                <span class="checkbox_fake"></span>
+                                <span class="checkbox_title">7</span>
+    
+                            </label>
+    
+    
+    
+                        </div> <!-- End Widget Body -->
+    
+                    </div> <!-- End Widget  -->
+    
+                    <div class="widget widget_btn"> <!--  Start Widget -->
+
+                        <div class="widget_body widget_body_btn"> <!-- Start Widget Body -->
+    
+                            <button type="reset" id="filter" class="form-btn">
+                                <img src="img/cancel.png" alt="Reset">
+                                      <span>Filter</span>
+                            </button>
+      
+                          </div> <!-- End Widget Body -->
+    
+                        <div class="widget_body widget_body_btn"> <!-- Start Widget Body -->
+    
+                          <button type="reset" class="form-btn">
+                              <img src="img/cancel.png" alt="Reset">
+                                    <span>Reset</span>
+                          </button>
+    
+                        </div> <!-- End Widget Body -->
+    
+                    </div> <!-- End Widget  -->
+
+                </form>
+
+
+            </aside> <!-- Close Sidebar -->
+
+            <div class="post-collect">
+                <div class="posts-main-container posts-book">
+                    <div class="all cars any manual allpas four" id="01">
+                        <div class="post-img">
+                            <img class="category_img" src="img/ToyotaAygo.jpg" alt="ToyotaAygo">
+                            <span class="category_name car">Car</span>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span class="veh-name"><i class="fa fa-car"><em>Toyota Aygo</em></i></span>
+                                <span class="post-cost"><i class="fas fa-pound-sign"></i><em>53</em></span>
+                            </div>
+                            <hr>
+                            <div class="post-content-bottom">
+                                <span><i class="fas fa-car"></i><strong>Car</strong></span>
+                                <span><i class="fas fa-cog"></i><strong>Manual</strong></span>
+                                <span><i class="fas fa-user-friends"></i><strong>4</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all cars any automatic allpas five">
+                        <div class="post-img">
+                            <img class="category_img" src="img/FordFocusFilter.jpg" alt="FordFocus">
+                            <span class="category_name car">Car</span>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fa fa-car"><em>Ford Focus</em></i></span>
+                                <span><i class="fas fa-pound-sign"></i><em>64</em></span>
+                            </div>
+                            <hr>
+                            <div class="post-content-bottom">
+                                <span><i class="fas fa-car"></i><strong>Car</strong></span>
+                                <span><i class="fas fa-cog"></i><strong>Automtic</strong></span>
+                                <span><i class="fas fa-user-friends"></i><strong>5</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all cars any manual allpas two">
+                        <div class="post-img">
+                            <img class="category_img" src="img/Citroen2CV.jpg" alt="Citroen2CV">
+                            <span class="category_name car">Car</span>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fa fa-car"><em>Citroen 2CV</em></i></span>
+                                <span><i class="fas fa-pound-sign"></i><em>30</em></span>
+                            </div>
+                            <hr>
+                            <div class="post-content-bottom">
+                                <span><i class="fas fa-car"></i><strong>Car</strong></span>
+                                <span><i class="fas fa-cog"></i><strong>Manual</strong></span>
+                                <span><i class="fas fa-user-friends"></i><strong>2</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all cars any manual allpas two">
+                        <div class="post-img">
+                            <img class="category_img" src="img/LamborghiniHuracanFilter.jpg" alt="Lamborghini">
+                            <span class="category_name car">Car</span>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fa fa-car"><em>Lamborghini</em></i></span>
+                                <span><i class="fas fa-pound-sign"></i><em>2400</em></span>
+                            </div>
+                            <hr>
+                            <div class="post-content-bottom">
+                                <span><i class="fas fa-car"></i><strong>Car</strong></span>
+                                <span><i class="fas fa-cog"></i><strong>Manual</strong></span>
+                                <span><i class="fas fa-user-friends"></i><strong>2</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all suv any manual allpas five">
+                        <div class="post-img">
+                            <img class="category_img" src="img/Volvoxc60Filter.jpg" alt="Lamborghini">
+                            <span class="category_name suvs">SUV</span>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fa fa-car"><em>Volvo XC60</em></i></span>
+                                <span><i class="fas fa-pound-sign"></i><em>185</em></span>
+                            </div>
+                            <hr>
+                            <div class="post-content-bottom">
+                                <span><i class="fas fa-car"></i><strong>SUV</strong></span>
+                                <span><i class="fas fa-cog"></i><strong>Manual</strong></span>
+                                <span><i class="fas fa-user-friends"></i><strong>5</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all suv any automatic allpas five">
+                        <div class="post-img">
+                            <img  class="category_img" src="img/FordKugaGrid.jpg" alt="Lamborghini">
+                            <span class="category_name suvs">SUv</span>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fa fa-car"><em>Ford Kuga</em></i></span>
+                                <span><i class="fas fa-pound-sign"></i><em>92</em></span>
+                            </div>
+                            <hr>
+                            <div class="post-content-bottom">
+                                <span><i class="fas fa-car"></i><strong>SUV</strong></span>
+                                <span><i class="fas fa-cog"></i><strong>Automatic</strong></span>
+                                <span><i class="fas fa-user-friends"></i><strong>5</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all suv any automatic allpas five">
+                        <div class="post-img">
+                            <img class="category_img" src="img/RangeRoverGrid.jpg" alt="Lamborghini">
+                            <span class="category_name suvs">SUV</span>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fa fa-car"><em>Range Rover Sport</em></i></span>
+                                <span><i class="fas fa-pound-sign"></i><em>240</em></span>
+                            </div>
+                            <hr>
+                            <div class="post-content-bottom">
+                                <span><i class="fas fa-car"></i><strong>SUV</strong></span>
+                                <span><i class="fas fa-cog"></i><strong>Automatic</strong></span>
+                                <span><i class="fas fa-user-friends"></i><strong>5</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all van any manual allpas three">
+                        <div class="post-img">
+                            <img class="category_img" src="img/VauxhallVivaroGrid.jpg" alt="Lamborghini">
+                            <span class="category_name vans">Van</span>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fa fa-car"><em>Vauxhall Vivaro</em></i></span>
+                                <span><i class="fas fa-pound-sign"></i><em>60</em></span>
+                            </div>
+                            <hr>
+                            <div class="post-content-bottom">
+                                <span><i class="fas fa-car"></i><strong>Van</strong></span>
+                                <span><i class="fas fa-cog"></i><strong>Manual</strong></span>
+                                <span><i class="fas fa-user-friends"></i><strong>3</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all van any manual allpas two">
+                        <div class="post-img">
+                            <img class="category_img" src="img/RenaultKangooGrid.jpg" alt="Lamborghini">
+                            <span class="category_name vans">Van</span>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fa fa-car"><em>Renault Kangoo</em></i></span>
+                                <span><i class="fas fa-pound-sign"></i><em>50</em></span>
+                            </div>
+                            <hr>
+                            <div class="post-content-bottom">
+                                <span><i class="fas fa-car"></i><strong>Van</strong></span>
+                                <span><i class="fas fa-cog"></i><strong>Manual</strong></span>
+                                <span><i class="fas fa-user-friends"></i><strong>2</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all people carrier any automatic allpas seven">
+                        <div class="post-img">
+                            <img class="category_img" src="img/SeatAlhambraGrid.jpg" alt="Lamborghini">
+                            <span class="category_name carriers">People Carrier</span>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post-content-top">
+                                <span><i class="fa fa-car"><em>Seat Alhambra</em></i></span>
+                                <span><i class="fas fa-pound-sign"></i><em>200</em></span>
+                            </div>
+                            <hr>
+                            <div class="post-content-bottom">
+                                <span><i class="fas fa-car"></i><strong>People Carrier</strong></span>
+                                <span><i class="fas fa-cog"></i><strong>Automatic</strong></span>
+                                <span><i class="fas fa-user-friends"></i><strong>7</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div> <!-- End Container -->
+
+    </section> <!-- End Section -->
+
+
+<script src="filter.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
