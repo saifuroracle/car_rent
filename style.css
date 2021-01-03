@@ -978,3 +978,29 @@ q {
   padding: 8px;
   border: 1px solid #fff;
 }
+
+
+
+/* category_left_sidebar */
+
+
+
+
+@media (min-width: 901px) {
+  
+  .category_left_sidebar{
+    float: left;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .category_left_sidebar{
+    padding-left: 10px;
+  }
+}
+@media (max-width: 760px) {
+
+}
+@media (max-width: 550px) {
+
+}
